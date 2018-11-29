@@ -1,0 +1,30 @@
+body{
+    background-color:#1d5ec0; 
+}
+
+#headContent{
+    background-image:url('/ProyectoABP/imagenes/ladrillos2.jpg');
+
+}
+
+#footContent{
+    background-color:#102b6d;
+}
+
+#navbarToggleExternalContent{
+    width:250px;
+    font-weight: bold;
+    text-align: center;
+    background-color:#19398a;
+}
+
+#desplegable{
+    border-bottom-right-radius: 10%;
+}
+
+.menu:hover{
+    font-weight: bold;
+    text-align: center;
+    background-color:#244cb3;
+}
+

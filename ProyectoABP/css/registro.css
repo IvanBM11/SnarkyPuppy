@@ -1,0 +1,10 @@
+body{
+     background-image: url("/ProyectoABP/imagenes/sagrada-familia.jpg"); 
+} 
+
+#tot{
+    
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px; 
+}
