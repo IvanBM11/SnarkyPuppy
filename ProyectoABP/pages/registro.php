@@ -10,6 +10,10 @@
     <script src="/ProyectoABP/js/popper.min.js"></script>
     <script src="/ProyectoABP/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/ProyectoABP/css/registro.css">
+
+    <script>
+        
+    </script>
 </head>
 <body>
 
@@ -19,7 +23,6 @@
              <h2>Sign Up</h2>    
         </div>
         <div class="card-body">
-
             <form action="../Controller.php" method="post">
                         <div class="form-group row">
                             <label for="txtMail" class="col-sm-2 col-form-label">e-Mail</label>
@@ -42,13 +45,11 @@
                         <div class="form-group row">
                             <div class="col-sm-2"></div>
                             <div class="col-sm-10">
-                                <button type="submit" class="btn btn-primary" name="buttonaceptar" id="buttonaceptar" style="border-radius: 15px;">ACEPTAR</button>
-                                <a role="button" class="btn btn-secondary" href="home.php" style="border-radius: 15px;">CANCELAR</a>
+                                <button type="submit" class="btn btn-success" name="buttonaceptar" id="buttonaceptar" style="border-radius: 15px;">ACCEPT</button>
+                                <a role="button" class="btn btn-danger" href="home.php" style="border-radius: 15px;">CANCEL</a>
                             </div>
                         </div>
-                    </form>
-
-
+            </form>
 
         </div>
         <div class="card-footer bg-secondary">

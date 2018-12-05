@@ -1,0 +1,9 @@
+#cabezera{
+    background-image: url("/ProyectoABP/imagenes/puzzle.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    opacity:2;
+}
+.card-text{
+    font-size: 13px;
+}

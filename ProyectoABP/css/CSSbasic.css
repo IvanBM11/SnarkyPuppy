@@ -1,21 +1,24 @@
 body{
-    background-color:#1d5ec0; 
+    background-color:rgb(47, 41, 54);
 }
 
 #headContent{
-    background-image:url('/ProyectoABP/imagenes/ladrillos2.jpg');
+    background-color:rgb(105, 55, 163);
+}
 
+#btnSign>a>button{
+    background-color:rgb(64, 20, 114);
 }
 
 #footContent{
-    background-color:#102b6d;
+    background-color:rgb(105, 55, 163);
 }
 
-#navbarToggleExternalContent{
+#navbarToggleExternalContent, #navbarToggleUser{
     width:250px;
     font-weight: bold;
     text-align: center;
-    background-color:#19398a;
+    background-color:rgb(76, 15, 146);
 }
 
 #desplegable{
@@ -25,6 +28,26 @@ body{
 .menu:hover{
     font-weight: bold;
     text-align: center;
-    background-color:#244cb3;
+    background-color:rgb(113, 51, 184);
+}
+/* .btn{
+    background-color: #6342ac;
+}
+.btn:hover{
+    background-color: #afca37;
+} */
+#userTg{
+    background-color: rgb(157, 113, 207);
 }
 
+#userTg>img{
+    width: 70px;
+}
+
+#logOut{
+    background-color:rgb(76, 15, 146);
+}
+
+#logOut:hover{
+    background-color:rgb(113, 51, 184);
+}

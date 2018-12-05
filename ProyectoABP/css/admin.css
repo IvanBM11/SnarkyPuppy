@@ -1,0 +1,17 @@
+body{
+    background-image: url("/ProyectoABP/imagenes/admin.jpg");
+}
+.bot{
+    height: 200px;
+}
+.bot:hover{
+    height:250px ;
+}
+.carta {
+    background-color: rgba(255, 255, 255, 0);
+}
+#tot{
+    margin-top: 200px;
+    float: none; 
+    margin-bottom: 10px; 
+}
