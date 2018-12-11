@@ -1,0 +1,1 @@
+// Js to control the score of the player
