@@ -8,17 +8,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoABP/Librerias/ti.php'
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>
-            <?php startblock('titol') ?>
-            <?php endblock()?>
-        </title>
-
+        <title></title>
         <link rel="stylesheet" href="/ProyectoABP/css/bootswatch.css">
         <link rel="stylesheet" href="/ProyectoABP/css/CSSbasic.css">
-        
-        <?php startblock('css') ?>
-        <?php endblock()?>
-
         <script src="/ProyectoABP/js/jquery-3.3.1.min.js"></script>
         <script src="/ProyectoABP/js/popper.min.js"></script>
         <script src="/ProyectoABP/js/bootstrap.min.js"></script>
@@ -75,16 +67,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoABP/Librerias/ti.php'
                 </div>
             </div>
 
-            <?php startblock('principal') ?>
+            <?php startblock('principal2') ?>
             <?php endblock() ?>
     
-            <footer>
-                <nav id="footContent" class="navbar navbar-expand-lg navbar-dark mt-3">
-                <img src="/ProyectoABP/imagenes/logos-de-perros-32.png">
-                <span>&nbsp;&nbsp;&nbsp;Copyright© 2018- Snarky Puppy. All rights reserved</span>
-                </nav>  
-            </footer>       
-            
         </div>
     </body>
 </html>

@@ -13,7 +13,7 @@
 </div>
 
 <div class="card-group">
-  <div class="card">
+  <div class="card" id="1">
     <img class="card-img-top" src="/ProyectoABP/imagenes/foto_enigma1.jpg" height="170px;">
     <div class="card-body">
       <h5 class="card-title">La pedrera</h5>
@@ -26,7 +26,7 @@ It is called "La Pedrera" because of its outer appearance, similar to an open-ai
         </a>
     </div>
   </div>
-  <div class="card">
+  <div class="card" id="2">
     <img class="card-img-top" src="/ProyectoABP/imagenes/foto_enigma2.jpg" height="170px;">
     <div class="card-body">
       <h5 class="card-title">Sagrada Familia</h5>
@@ -39,7 +39,7 @@ To design the interior, Gaudí was inspired by the forms of nature, creating col
         </a>
     </div>
   </div>
-  <div class="card">
+  <div class="card" id="3">
     <img class="card-img-top" src="/ProyectoABP/imagenes/foto_enigma3.jpg" height="170px;">
     <div class="card-body">
       <h5 class="card-title">Plaza Real</h5>
@@ -52,7 +52,7 @@ It is one of the places with more life and atmosphere, both day and night.</p>
         </a>
     </div>
   </div>
-  <div class="card">
+  <div class="card" id="4">
     <img class="card-img-top" src="/ProyectoABP/imagenes/foto_enigma4.jpg" height="170px;">
     <div class="card-body">
       <h5 class="card-title">Park Guell</h5>
@@ -64,14 +64,14 @@ It is one of the places with more life and atmosphere, both day and night.</p>
         </a>
     </div>
   </div>
-  <div class="card">
+  <div class="card" id="5">
     <img class="card-img-top" src="/ProyectoABP/imagenes/foto_enigma5.jpeg" height="170px;">
     <div class="card-body">
       <h5 class="card-title">Casa Batllo</h5>
       <p class="card-text">The Batlló house is the result of the total renovation of an old conventional house. </ Br> In 1900, the estate was acquired by Josep Batlló. It is thought that at this point there had previously been a farmhouse because in the basement was a cave made as a warehouse that Gaudí wanted to preserve.</p>
     </div>
     <div class="card-footer text-center">
-        <a href="">
+        <a href="/ProyectoABP/pages/enigma5.php">
             <button type="button" class="btn btn-success">PLAY PUZZLE</button>
         </a>
     </div>

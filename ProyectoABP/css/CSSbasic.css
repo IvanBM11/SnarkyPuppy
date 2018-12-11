@@ -12,6 +12,7 @@ body{
 
 #footContent{
     background-color:rgb(105, 55, 163);
+
 }
 
 #navbarToggleExternalContent, #navbarToggleUser{
@@ -30,12 +31,14 @@ body{
     text-align: center;
     background-color:rgb(113, 51, 184);
 }
+
 /* .btn{
     background-color: #6342ac;
 }
 .btn:hover{
     background-color: #afca37;
 } */
+
 #userTg{
     background-color: rgb(157, 113, 207);
 }
@@ -50,4 +53,11 @@ body{
 
 #logOut:hover{
     background-color:rgb(113, 51, 184);
+}
+span{
+    color:white;
+}
+footer>nav>img{
+    height: 50px;
+    width: 80px;
 }
