@@ -32,15 +32,17 @@ function move(e){
     var midY = (yP2 - yP1) / 2;
     yP12 = yP1 + midY;
 
-    // Collection of wall's position
-    var wallsCollPoints = checkPoints();
+    var point1 = [xP1, yP1];
+    var point2 = [xP2, yP1];
+    var point3 = [xP1, yP2];
+    var point4 = [xP2, yP2];
 
     switch(e.keyCode){
         case 37:
             if(xP1 <= xM1 + 4){
                 clearInterval();
             }else{
-                var collision = leftBorder(wallsCollPoints, midPoint);
+                var collision = border(point1, point3, midPoint);
                 if(collision){
                     clearInterval();
                 }else{
@@ -54,7 +56,7 @@ function move(e){
             if (yP1 <= yM1 + 4) {
                 clearInterval();
             } else {
-                var collision = topBorder(wallsCollPoints, midPoint);
+                var collision = border(point1, point2, midPoint);
                 if (collision) {
                     clearInterval();
                 }else{
@@ -68,7 +70,7 @@ function move(e){
             if (xP2 >= xM2 - 4) {
                 clearInterval();
             } else {
-                var collision = rightBorder(wallsCollPoints, midPoint);
+                var collision = border(point2, point4, midPoint);
                 if (collision) {
                     clearInterval();
                 } else {
@@ -82,7 +84,7 @@ function move(e){
             if (yP2 >= yM2 - 4) {
                 clearInterval();
             } else {
-                var collision = bottomBorder(wallsCollPoints, midPoint);
+                var collision = border(point3, point4, midPoint);
                 if (collision) {
                     clearInterval();
                 } else {
@@ -92,183 +94,6 @@ function move(e){
             }
         break;
     }
-}
-
-// Check possible collision points
-function checkPoints(){
-
-    // Array with all wall's coordinates
-    var arrayColPoints = [];
-
-    // Wall coordinates
-    var x1;
-    var y1;
-    var x2;
-    var y2;
-
-    for (var index = 0; index < walls.length; index++) {
-        x1 = walls[index].getBoundingClientRect().x;
-        y1 = walls[index].getBoundingClientRect().y;
-        x2 = walls[index].getBoundingClientRect().x + walls[index].getBoundingClientRect().width;
-        y2 = walls[index].getBoundingClientRect().y + walls[index].getBoundingClientRect().height;
-
-        var array = [x1, y1, x2, y2];
-
-        arrayColPoints[index] = array;
-    }
-
-    return arrayColPoints;
-}
-
-// Point player TOP-LEFT
-function point1(wallsCollPoints) {
-    var pum = false;
-    for (var wallIndex = 0; wallIndex < wallsCollPoints.length; wallIndex++) {
-        var wall = wallsCollPoints[wallIndex];
-        
-        if (xP1 >= wall[0] - 3 && xP1 <= wall[2] + 3) {
-            if (yP1 >= wall[1] - 3 && yP1 <= wall[3] + 3) {
-                pum = true;
-                break;
-            } else {
-                pum = false;
-            }
-        } else {
-            pum = false;
-        }
-    }
-
-    return pum;
-}
-
-// Point player TOP-RIGHT
-function point2(wallsCollPoints) {
-    var pum = false;
-    for (var wallIndex = 0; wallIndex < wallsCollPoints.length; wallIndex++) {
-        var wall = wallsCollPoints[wallIndex];
-
-        if (xP2 >= wall[0] - 3 && xP2 <= wall[2] + 3 ) {
-            if (yP1 >= wall[1] - 3 && yP1 <= wall[3] + 3 ) {
-                pum = true;
-                break;
-            } else {
-                pum = false
-            }
-        } else {
-            pum = false;
-        }
-    }
-    return pum;
-}
-
-// Point player BOTTOM-LEFT
-function point3(wallsCollPoints) {
-    var pum = false;
-    for (var wallIndex = 0; wallIndex < wallsCollPoints.length; wallIndex++) {
-        var wall = wallsCollPoints[wallIndex];
-
-        if (xP1 >= wall[0] - 3 && xP1 <= wall[2] + 3 ) {
-            if (yP2 >= wall[1] - 3 && yP2 <= wall[3] + 3 ) {
-                pum = true;
-                break;
-            } else {
-                pum = false
-            }
-        } else {
-            pum = false;
-        }
-    }
-    
-    return pum;
-}
-
-// Point player BOTTOM-RIGHT
-function point4(wallsCollPoints) {
-    var pum = false;
-    for (var wallIndex = 0; wallIndex < wallsCollPoints.length; wallIndex++) {
-        var wall = wallsCollPoints[wallIndex];
-
-        if (xP2 >= wall[0] - 3 && xP2 <= wall[2] + 3 ) {
-            if (yP2 >= wall[1] - 3 && yP2 <= wall[3] + 3 ) {
-                pum = true;
-                break;
-            } else {
-                pum = false
-            }
-        } else {
-            pum = false;
-        }
-    }
-    
-    return pum;
-}
-
-function midPoint(corner1, corner2, coordinates){
-    
-    var midCol;
-
-    if(!corner1 && !corner2){
-        midCol = false;
-    }else{
-        if(corner1 && corner2){
-            midCol = true;
-        }else{
-            for (var index = 0; index < coordinates.length; index++) {
-                var wall = coordinates[index];
-        
-                if (xP12 >= wall[0] - 3 && xP12 <= wall[2] + 3 ) {
-                    if (yP12 >= wall[1] - 3 && yP12 <= wall[3] + 3 ) {
-                        midCol = true;
-                        break;
-                    } else {
-                        midCol = false
-                    }
-                } else {
-                    midCol = false;
-                }
-            }
-        }
-    }
-
-    return midCol;
-}
-
-
-// Check player left border
-function leftBorder(wallsCollPoints, midPoint){
-
-    var pointTL = point1(wallsCollPoints);
-    var pointBL = point3(wallsCollPoints);
-    var colFinal = midPoint(pointTL, pointBL, wallsCollPoints);
-
-    return colFinal;
-}
-
-// Check right border
-function rightBorder(wallsCollPoints, midPoint) {
-    var pointTR = point2(wallsCollPoints);
-    var pointBR = point4(wallsCollPoints);
-    var colFinal = midPoint(pointTR, pointBR, wallsCollPoints);
-
-    return colFinal;
-}
-
-// Check top border
-function topBorder(wallsCollPoints, midPoint) {
-    var pointTL = point1(wallsCollPoints);
-    var pointTR = point2(wallsCollPoints);
-    var colFinal = midPoint(pointTL, pointTR, wallsCollPoints);
-
-    return colFinal;
-}
-
-// Check bottom border
-function bottomBorder(wallsCollPoints, midPoint) {
-    var pointBR = point3(wallsCollPoints);
-    var pointBL = point4(wallsCollPoints);
-    var colFinal = midPoint(pointBR, pointBL, wallsCollPoints);
-
-    return colFinal;
 }
 
 // Cheking if arrow key's pressed for movement
