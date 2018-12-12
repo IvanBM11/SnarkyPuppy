@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="myCSS.css" rel="stylesheet">
+    <title>Maze at Parc Guell</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 
     <div id="timerDiv">
-        <p id="timer">TIMER</p>
+        <p>TIME </br> <span id="timer"></span> </p>
     </div>
     <!-- Maze div -->
     <div id="maze">
@@ -36,15 +42,15 @@
 </body>
 
 <!-- Script to control the time that the user play's -->
-<script src="timer.js"></script>
+<script src="js/player/timer.js"></script>
 <!-- Script to take control about the coliders of the walls -->
-<script src="wallsColision.js"></script>
+<script src="js/wall/wallsColision.js"></script>
 <!-- Script to move the player -->
-<script src="move.js"></script>
+<script src="js/player/move.js"></script>
 <!-- Script to animate the player -->
-<script src="enemies.js"></script>
+<script src="js/enemy/enemies.js"></script>
 <!-- Script to take control about the coliders of the enemies -->
-<script src="enemiesColision.js"></script>
+<script src="js/enemy/enemiesColision.js"></script>
 
 
 </html>
