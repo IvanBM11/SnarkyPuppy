@@ -1,0 +1,144 @@
+
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,serif;
+  background-color:rgb(47, 41, 54);
+
+}
+h1{
+  text-align: center;
+}
+a{
+  color: #D91139;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+#divContenedor{
+  position: relative;
+  margin: auto;
+ 
+  border: solid 0px #000;
+  width: 808px;
+  text-align: center;
+  border-radius: 5px;
+  background: #000;
+  height: 547px;
+  padding-top: 5px;
+}
+ul{
+  list-style: none;
+padding: 0%;
+margin: 0%;
+
+
+}
+
+ul li{
+  display: inline-block;
+  background: #303030 no-repeat;
+  margin: 2px;
+  width: 128px;
+  height: 130px;
+  text-align: center;
+  border-radius: 3px;
+  border:solid 1px #333;
+  cursor: pointer;
+  color: #D91139;
+}
+ul li:hover{
+  border-color: #D91139;
+}
+#divInicio{
+  background: #000 url(../memori/img/Mason.png) no-repeat center;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  color: #fff;
+}
+#divInferior{
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+}
+#divInferior p{
+  padding-bottom: 10px;
+}
+#divInferior input[type="button"]{
+  border: solid 1px #333;
+  border-radius: 3px;
+  padding: 5px;
+  background: #000;
+  color: #999;
+  cursor: pointer;
+}
+#divInferior input[type="button"]:hover{
+  border-color: #D91139;
+  color: #fff;
+}
+
+#divContador p{
+  padding: 5px;
+  color :#fff;
+}
+
+
+
+
+
+
+
+#headContent{
+  background-color:rgb(105, 55, 163);
+  width: 1110px;
+  margin: auto;
+
+}
+
+#btnSign>a>button{
+  background-color:rgb(64, 20, 114);
+}
+
+#footContent{
+  background-color:rgb(105, 55, 163);
+
+}
+
+#navbarToggleExternalContent, #navbarToggleUser{
+  width:250px;
+  font-weight: bold;
+  text-align: center;
+  background-color:rgb(76, 15, 146);
+}
+
+
+.menu:hover{
+  font-weight: bold;
+  text-align: center;
+  background-color:rgb(113, 51, 184);
+}
+
+
+footer{
+  margin: auto;
+  width: 1110px;
+}
+
+
+
+
+
+footer>nav>img{
+  height: 50px;
+  width: 80px;
+}
+
+.modal-header{
+  background-color:  rgb(64, 20, 114);
+}

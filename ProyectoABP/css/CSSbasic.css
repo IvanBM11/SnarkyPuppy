@@ -1,0 +1,63 @@
+body{
+    background-color:rgb(47, 41, 54);
+}
+
+#headContent{
+    background-color:rgb(105, 55, 163);
+}
+
+#btnSign>a>button{
+    background-color:rgb(64, 20, 114);
+}
+
+#footContent{
+    background-color:rgb(105, 55, 163);
+
+}
+
+#navbarToggleExternalContent, #navbarToggleUser{
+    width:250px;
+    font-weight: bold;
+    text-align: center;
+    background-color:rgb(76, 15, 146);
+}
+
+#desplegable{
+    border-bottom-right-radius: 10%;
+}
+
+.menu:hover{
+    font-weight: bold;
+    text-align: center;
+    background-color:rgb(113, 51, 184);
+}
+
+/* .btn{
+    background-color: #6342ac;
+}
+.btn:hover{
+    background-color: #afca37;
+} */
+
+#userTg{
+    background-color: rgb(157, 113, 207);
+}
+
+#userTg>img{
+    width: 70px;
+}
+
+#logOut{
+    background-color:rgb(76, 15, 146);
+}
+
+#logOut:hover{
+    background-color:rgb(113, 51, 184);
+}
+span{
+    color:white;
+}
+footer>nav>img{
+    height: 50px;
+    width: 80px;
+}

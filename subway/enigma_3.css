@@ -1,0 +1,72 @@
+#container {
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    margin: auto;
+    margin-left: 25%;
+    background: #7792d3;
+}
+
+#animate {
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#pj {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 3px;
+    left: 120px;
+    font-size: 18px;
+}
+
+#imagen {
+    width: 90px;
+    height: 80px;
+    background-color: transparent;
+    margin-top: -23px;
+}
+
+#imagenobs {
+    margin-top: -9px;
+    margin-left: -10px;
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+}
+
+#suelo {
+    width: 700px;
+    height: 3px;
+    position: absolute;
+    background: black;
+    bottom: 0px;
+}
+
+#imgnube1 {
+    width: 220px;
+    height: 200px;
+}
+
+#imgnube2 {
+    width: 220px;
+    height: 200px;
+}
+
+#carretera {
+    width: 700px;
+    height: 5px;
+    position: absolute;
+    background: rgb(78, 61, 4);
+    bottom: 3px;
+}
+
+#puntuacion {
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 500px
+}

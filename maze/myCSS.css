@@ -1,0 +1,78 @@
+#timerDiv{
+    height: 70px;
+    width: 100px;
+    margin: auto;
+    position: relative;
+}
+
+#timer{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#maze{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(117, 68, 196);
+    margin: auto;
+    position: relative;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+#player{
+    height: 20px;
+    width: 20px;
+    top: 20px;
+    left: 20px;
+    background-color: red;
+    position: relative;
+}
+
+/* ENEMIES */
+
+/* Class */
+.enemy{
+    height: 30px;
+    width: 30px;
+    background-color: purple;
+    position: relative;
+}
+
+/* Individual enemy */
+#enemy1{
+    top: -30px;
+    left: 70px;
+    position: relative;
+}
+
+#enemy2{
+    left: 130px;
+    position: relative;
+    
+}
+
+/* WALLS */
+
+/* Class */
+.wall{
+    background-color: black;
+}
+
+/* Individual wall */
+#wall1{
+    width: 20px;
+    height: 100px;
+    top: -20px;
+    left: 70px;
+    position: relative;
+}
+
+#wall2{
+    width: 120px;
+    height: 20px;
+    top: 30px;
+    position: relative;
+}
